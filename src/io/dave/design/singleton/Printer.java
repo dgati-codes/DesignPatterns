@@ -13,13 +13,13 @@ package io.dave.design.singleton;
  * imply that an object is not created.
  */
 public class Printer {
-    private static Printer INSTANCE = null;
+    private static Printer instance = null;
     private Printer() {
     }
     public static Printer getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new Printer();
+        if (instance == null) {
+            instance = new Printer();
         }
-        return INSTANCE;
+        return instance;
     }
 }
